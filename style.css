@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1d1e22;
+  font-family: "Montserrat", sans-serif;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: #f1f1f3;
+}
+
+.container {
+  display: flex;
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.main-section {
+  display: flex;
+  margin: 60px auto;
+  align-items: center;
+}
+
+.card {
+  margin: 10px;
+  background: #09090b;
+  color: #f1f1f3;
+  height: 450px;
+  width: 630px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px 0px #010102;
+  border-radius: 8px;
+}
+
+.card img {
+  padding: 5px 0;
+}
+
+.button-change {
+  background: #8e17e4;
+  border: none;
+  color: #f1f1f3;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px #010102;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  outline: none;
+}
+
+section {
+  height: 510px;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+  display: none;
+}
+
+.carousel .carousel__item .card {
+  width: 100%;
+  height: auto;
+}
+
+.carousel .carousel__item--visible {
+  display: block;
+  animation: fadeVisibility 1s;
+}
+
+.carousel__actions {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 40%;
+  margin: 0 auto;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+
+.cta-buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-buy-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-buy-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-buy span {
+  font-size: 25px;
+  padding: 5px;
+}
+.cta-buy-2 span {
+  font-size: 25px;
+  padding: 5px;
+}
+.cta-buy-3 span {
+  font-size: 25px;
+  padding: 5px;
+}
+
+.cta-buy button {
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #cd7f32;
+  color: #1d1e22;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  outline: none;
+  font-weight: bold;
+}
+
+.cta-buy-2 button {
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #c0c0c0;
+  color: #1d1e22;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  outline: none;
+  font-weight: bold;
+}
+
+.cta-buy-3 button {
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #ffd700;
+  color: #1d1e22;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  outline: none;
+  font-weight: bold;
+}
